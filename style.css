@@ -26,6 +26,18 @@
 .btn-box button:hover .fa{
   color: #ff7846;
 }
-
+.content{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 5% auto;
+}
+.content-left{
+  flex-basis: 50%
+}
+.content-left p{
+  font-size: 13px;
+  padding: 30px 0;
+}
 
 
