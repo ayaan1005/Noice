@@ -23,8 +23,8 @@
   font-size: 15px;
   font-width: bold;
 }
-.btn-box .fa{
-  margin-right: 20px;
+.btn-box button:hover .fa{
+  color: #ff7846;
 }
 
 
