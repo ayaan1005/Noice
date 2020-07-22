@@ -1,11 +1,25 @@
-/* CSS files add styling rules to your content */
-
-body {
-  font-family: helvetica, arial, sans-serif;
-  margin: 2em;
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
 }
-
-h1 {
-  font-style: italic;
-  color: #373fff;
+.alix{
+  width: 80%;
+  hight: 450px;
+  position: relative;
+  margin: 100 auto;
+}
+.btn-box{
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+.btn-box button{
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  margin-right: none;
+  font-size: 15px;
+  font-width: bold;
 }
