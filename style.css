@@ -32,7 +32,6 @@
   justify-content: center;
   text-align: center;
   margin: 5% auto;
-  position: absolute;
   transform: translateX(100%);
 }
 .content-left{
@@ -42,6 +41,11 @@
   font-size: 15px;
   padding: 30px 0;
 }
-
+#content1{
+  transform: translateX(0px);
+}
+#btn1{
+  color: #ff7846;
+}
 
 
