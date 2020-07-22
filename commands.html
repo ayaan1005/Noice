@@ -112,6 +112,7 @@
 		<link rel="stylesheet" href="style.css">
 		<link rel="stylesheet" href="font-awesome.min.css">
 		<link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
         <meta name="theme-color" content="#2c75ff" />
         <meta property="og:url" content="https://hgbf.glitch.me/">
@@ -124,7 +125,7 @@ MADE IN INDIA">
 		<meta name="viewport" content="width=device-width, initial-scale=0.8">
 	</head>
 	<body>
-		<div class="hero-head hero is-info" style="background-color: #e19fa9;">
+		<div class="hero-head hero is-info" style="background-color: #0058ff;">
 			<header class="nav">
 				<div class="container">
 					<a class="nav-item" href='/'>
@@ -155,8 +156,8 @@ MADE IN INDIA">
 						Commands
 					</p>
 					<ul class="menu-list">
-							<li><a class="tablinks is-active" onclick="show(event, 'Moderation');">Moderation</a></li>
-							<li><a class="tablinks " onclick="show(event, 'Automation');">Automation</a></li>
+							<li><a class="tablinks is-active" onclick="show(event, 'Moderation');"><i class="fa fa-gavel" aria-hidden="true"></i> Moderation</a></li>
+							<li><a class="tablinks " onclick="show(event, 'Automation');"><i class="fa fa-smile-o" aria-hidden="true"></i> Action</a></li>
 							<li><a class="tablinks " onclick="show(event, 'Features');">Features</a></li>
 							<li><a class="tablinks " onclick="show(event, 'Permissions');">Permissions</a></li>
 							<li><a class="tablinks " onclick="show(event, 'Search');">Search</a></li>
@@ -340,6 +341,22 @@ MADE IN INDIA">
           	<div class="card card-command">
 							<header class="card-header">
 								<p class="card-header-title">
+									<code>!!poll</code>
+								</p>
+								<div class="card-header-icon">
+									<span class="tag is-success is-pulled-right">MANAGE_MESSAGES</span>
+									<span class="tag is-info is-pulled-right">SERVER ONLY</span>
+						    	</div>
+							</header>
+							<div class="card-content card-content-command">
+								<div class="content">
+									Allows you to make a poll.
+								</div>
+							</div>
+						 </div>
+          	<div class="card card-command">
+							<header class="card-header">
+								<p class="card-header-title">
 									<code>!!say</code>
 								</p>
 								<div class="card-header-icon">
@@ -369,12 +386,28 @@ MADE IN INDIA">
 								</div>
 							</div>
 						 </div>
+          	<div class="card card-command">
+							<header class="card-header">
+								<p class="card-header-title">
+									<code>!!unmute</code>
+								</p>
+								<div class="card-header-icon">
+									<span class="tag is-success is-pulled-right">MANAGE_SERVER</span>
+									<span class="tag is-info is-pulled-right">SERVER ONLY</span>
+						    	</div>
+							</header>
+							<div class="card-content card-content-command">
+								<div class="content">
+									Unmutes a member in the server.
+								</div>
+							</div>
+						 </div>
 				</div>
 				<div id="Automation" class="tabcontent" style='display: block; display:none;'>
 						<div class="card card-command">
 							<header class="card-header">
 								<p class="card-header-title">
-									<code>y!autorole</code>
+									<code>!!baka</code>
 								</p>
 								<div class="card-header-icon">
 									<span class="tag is-success is-pulled-right">MANAGE_ROLES</span>
@@ -383,7 +416,7 @@ MADE IN INDIA">
 							</header>
 							<div class="card-content card-content-command">
 								<div class="content">
-									Automatically assigns a role to people when they join.
+									Sends a baka image mention or .
 								</div>
 							</div>
 						 </div>
