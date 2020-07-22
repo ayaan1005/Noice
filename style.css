@@ -11,7 +11,7 @@
 }
 .btn-box{
   display: flex;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 2px solid #ccc;
 }
 .btn-box button{
   background: transparent;
