@@ -27,3 +27,14 @@
 		width: 100%;
 	}
 }
+.hedder{
+  overflow: hidden;
+}
+.text{
+  font-size: 400%;
+  color: #FFFFFF;
+}
+.dic{
+  font-size: 20px;
+  postition: center;
+}
