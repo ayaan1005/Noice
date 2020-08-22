@@ -6,17 +6,15 @@ var app = express();
 var path = require("path");
 var bodyParser = require("body-parser")
 
-app.use(bodyParser.urlencoded({extended: true}));
-app.set("views", path.join(__dirname, "/views"));
-app.set("view engine", "ejs")
 app.use(express.static("public"));
 
-app.get("/", function(req, res) {
-  res.render("index", {client: client})
+// https://expressjs.com/en/starter/basic-routing.html
+app.get("/", (request, response) => {
+  response.sendFile(__dirname + "/index.html");
 });
 
-app.get("/stats", function(req, res) {
-  res.render("stats", {client: client})
+app.get("/commands", function(req, res) {
+  res.sendFile(__dirname + "/commands.html")
 });
 
 
