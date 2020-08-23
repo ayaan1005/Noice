@@ -15,10 +15,9 @@ app.get("/", function(req, res) {
   res.render("index", {client: client})
 });
 
-app.get("/stats", function(req, res) {
-  res.render("stats", {client: client})
+app.get("/commands", (request, response) => {
+  response.sendFile(__dirname + "/views/commands.html");
 });
-
 
 
 var listeners = app.listen(process.env.PORT, function() {
@@ -33,4 +32,4 @@ client.on("ready", () => {
   console.log("I am Looking Forward to this :D")
 })
 
-client.login("NzI3NzgxNDg2Njg1NzE2NDgy.Xvw1Uw.ArhCqj6E1qbHHBXaSODWhxX7RRc")
+client.login("Njk4NDk3MTkyOTM1MTYxODY2.XpGsNA.iqh_67zYjmtMvYP9MVhou-0tFzA")
