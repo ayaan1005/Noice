@@ -19,6 +19,9 @@ app.listen(3000)
 app.get("/commands", (request, response) => {
   response.sendFile(__dirname + "/views/commands.html");
 });
+app.get("/embed", (request, response) => {
+  response.sendFile(__dirname + "/views/embed.html");
+});
 
 
 
