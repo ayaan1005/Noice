@@ -13,16 +13,11 @@ app.use(express.static("public"));
 
 app.get("/", function(req, res) {
   res.render("index", {client: client})
+  res.sendStatus(200)
 });
-
+app.listen(3000)
 app.get("/commands", (request, response) => {
   response.sendFile(__dirname + "/views/commands.html");
-});
-
-
-
-var listeners = app.listen(process.env.PORT, function() {
-  console.log("Your app is listening on port " + listeners.address().port)
 });
 
 
