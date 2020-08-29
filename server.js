@@ -22,8 +22,6 @@ app.get("/commands", (request, response) => {
 
 
 
-
-
 client.on("ready", () => {
   console.log("I am Looking Forward to this :D")
 })
