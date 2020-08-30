@@ -37,6 +37,10 @@ app.get("/js/embedg/save_retieve.js", (request, response) => {
 app.get("/js/embedg/webhook.js", (request, response) => {
   response.sendFile(__dirname + "/js/embedg/webhook.js");
 });
+app.get("/assest/css/style.css", (request, response) => {
+  response.sendFile(__dirname + "/assest/css/style.css");
+});
+
 
 
 
