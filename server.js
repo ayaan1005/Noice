@@ -22,9 +22,22 @@ app.get("/commands", (request, response) => {
 app.get("/embed", (request, response) => {
   response.sendFile(__dirname + "/views/embed.html");
 });
-app.get("/js/embe", (request, response) => {
-  response.sendFile(__dirname + "/views/embed.html");
+app.get("/js/embedg/fields.js", (request, response) => {
+  response.sendFile(__dirname + "/js/embedg/fields.js");
 });
+app.get("/js/embedg/json_code.js", (request, response) => {
+  response.sendFile(__dirname + "/js/embedg/json_code.js");
+});
+app.get("/js/embedg/preview.js", (request, response) => {
+  response.sendFile(__dirname + "/js/embedg/preview.js");
+});
+app.get("/js/embedg/save_retieve.js", (request, response) => {
+  response.sendFile(__dirname + "/js/embedg/save_retieve.js");
+});
+app.get("/js/embedg/webhook.js", (request, response) => {
+  response.sendFile(__dirname + "/js/embedg/webhook.js");
+});
+
 
 
 
