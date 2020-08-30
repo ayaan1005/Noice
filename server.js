@@ -40,6 +40,12 @@ app.get("/js/embedg/webhook.js", (request, response) => {
 app.get("/assest/css/style.min.css", (request, response) => {
   response.sendFile(__dirname + "/assest/css/style.min.css");
 });
+app.get("/community", (request, response) => {
+   response.redirect("https://discord.gg/qBbgnxs")
+});
+app.get("/invite", (request, response) => {
+   response.redirect("https://discord.com/oauth2/authorize?client_id=698497192935161866&scope=bot&permissions=2088234239")
+});
 app.get("*", (request, response) => {
   response.sendFile(__dirname + "/views/404.html");
 });
