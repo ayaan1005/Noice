@@ -22,6 +22,9 @@ app.get("/commands", (request, response) => {
 app.get("/embed", (request, response) => {
   response.sendFile(__dirname + "/views/embed.html");
 });
+app.get("/js/embe", (request, response) => {
+  response.sendFile(__dirname + "/views/embed.html");
+});
 
 
 
