@@ -38,8 +38,9 @@ app.get("/js/embedg/webhook.js", (request, response) => {
   response.sendFile(__dirname + "/js/embedg/webhook.js");
 });
 
-
-
+app.get('*', function(req, res){
+  res.render("index", {client: client})
+});
 
 
 
