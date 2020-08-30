@@ -37,9 +37,12 @@ app.get("/js/embedg/save_retieve.js", (request, response) => {
 app.get("/js/embedg/webhook.js", (request, response) => {
   response.sendFile(__dirname + "/js/embedg/webhook.js");
 });
+app.get("/assest/css/style.min.css", (request, response) => {
+  response.sendFile(__dirname + "/assest/css/style.min.css");
+});
 
-app.get('*', function(req, res){
-  res.render("index", {client: client})
+app.get("*", (request, response) => {
+  response.sendFile(__dirname + "/views/404.html");
 });
 
 
