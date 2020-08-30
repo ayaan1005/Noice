@@ -40,9 +40,6 @@ app.get("/js/embedg/webhook.js", (request, response) => {
 app.get("/assest/css/style.min.css", (request, response) => {
   response.sendFile(__dirname + "/assest/css/style.min.css");
 });
-app.get("/js/count.js", (request, response) => {
-  response.sendFile(__dirname + "/js/count.js");
-});
 app.get("*", (request, response) => {
   response.sendFile(__dirname + "/views/404.html");
 });
