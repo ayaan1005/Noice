@@ -126,6 +126,25 @@ if (navigator.appVersion.indexOf("MSIE") != -1 && event.button == 2) { alert(mes
 document.onmousedown = rtclickcheck;
 
 </SCRIPT>
+     <script src="https://cdn.jsdelivr.net/npm/@widgetbot/crate@3" async defer>
+      const crate = new Crate({
+        server: "721772703362580581",
+        channel: "734448969354051666",
+        shard: "https://e.widgetbot.io",
+        css: `
+          .root .embed {
+            width: ${window.mobilecheck() ? "100%" : "75%"};
+          }
+        `,
+        notifications: true,
+        indicator: true
+      });
+      crate.notify({
+        content: "Need help? Join the support server to receive assistance!",
+        timeout: 5000,
+        avatar: "./images/cheesits456.gif"
+      })
+    </script>
 	</head>
 	<body>
 		<section class="hero is-info is-fullheight" style="background-image: url('https://cdn.discordapp.com/attachments/728520092685434961/735881143047553134/1920x1080-Gif-Background-Anime-Anime-Background-Gif-Tumblr-.gif'); background-size: cover; background-color: #ffbdba;">
@@ -326,4 +345,29 @@ document.onmousedown = rtclickcheck;
 			"retina_detect": true
 			});
 	</script>
+  <script type="text/javascript">
+    var oReq = new XMLHttpRequest();
+    oReq.addEventListener("load", function() {
+      let r;
+      widget = JSON.parse(this.response);
+      widget.channels.forEach(c => {
+        document.getElementById(
+          `stats-${c.name
+            .toLowerCase()
+            .split(":")[0]
+            .replace(/ /g, "-")}`
+        ).innerHTML = c.name.split(":")[1];
+      });
+    });
+    oReq.open(
+      "GET",
+      `https://discordapp.com/api/guilds/721772703362580581/widget.json`
+    );
+    oReq.setRequestHeader("origin", "");
+    oReq.send();
+
+    let width = "30%";
+    if (window.mobilecheck()) width = "80%";
+    document.getElementById("review").style.width = width;
+  </script>
 </html>
