@@ -1,0 +1,8 @@
+{
+    "port": 3000,
+
+    "clientId": "727781486685716482",
+    "clientSecret": "t_wLwISFe6hAIr9T8JPoS4UAibHBXDAc",
+    "scopes": ["identify", "guilds"],
+    "redirectUri": "https://habh.glitch.me/authorize/callback"
+}
