@@ -43,6 +43,9 @@ app.get("/assest/css/style.min.css", (request, response) => {
 app.get("/community", (request, response) => {
    response.redirect("https://discord.gg/qBbgnxs")
 });
+app.get("/dashboard", (request, response) => {
+   response.redirect("https://media.discordapp.net/attachments/728520092685434961/749973432774426704/avento.gif")
+});
 app.get("/invite", (request, response) => {
    response.redirect("https://discord.com/oauth2/authorize?client_id=698497192935161866&scope=bot&permissions=2088234239")
 });
