@@ -55,6 +55,9 @@ app.get("/dashboard", (request, response) => {
 app.get("/invite", (request, response) => {
    response.redirect("https://discord.com/oauth2/authorize?client_id=698497192935161866&scope=bot&permissions=2088234239")
 });
+app.get("/views/form.php", (request, response) => {
+  response.render(__dirname + "/views/form.php");
+});
 app.get("*", (request, response) => {
   response.sendFile(__dirname + "/views/404.html");
 });
