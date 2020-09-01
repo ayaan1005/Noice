@@ -15,9 +15,12 @@ app.get("/", function(req, res) {
   res.render("index", {client: client})
   res.sendStatus(200)
 });
-app.listen(3000)
+app.listen(3000) 
 app.get("/commands", (request, response) => {
   response.sendFile(__dirname + "/views/commands.html");
+});
+app.get("/contact-us", (request, response) => {
+  response.sendFile(__dirname + "/views/contact-us.html");
 });
 app.get("/embed", (request, response) => {
   response.sendFile(__dirname + "/views/embed.html");
@@ -39,6 +42,9 @@ app.get("/js/embedg/webhook.js", (request, response) => {
 });
 app.get("/assest/css/style.min.css", (request, response) => {
   response.sendFile(__dirname + "/assest/css/style.min.css");
+});
+app.get("/assest/css/contact.css", (request, response) => {
+  response.sendFile(__dirname + "/assest/css/contact.css");
 });
 app.get("/community", (request, response) => {
    response.redirect("https://discord.gg/qBbgnxs")
