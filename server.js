@@ -55,9 +55,6 @@ app.get("/dashboard", (request, response) => {
 app.get("/invite", (request, response) => {
    response.redirect("https://discord.com/oauth2/authorize?client_id=698497192935161866&scope=bot&permissions=2088234239")
 });
-app.get("/views/form.php", (request, response) => {
-  response.render(__dirname + "/views/form.php");
-});
 app.get("*", (request, response) => {
   response.sendFile(__dirname + "/views/404.html");
 });
@@ -68,4 +65,4 @@ client.on("ready", () => {
   console.log("I am Looking Forward to this :D")
 })
 
-client.login("Njk4NDk3MTkyOTM1MTYxODY2.XpGsNA.iqh_67zYjmtMvYP9MVhou-0tFzA")
+client.login(process.env.TOKEN)
