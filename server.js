@@ -53,7 +53,7 @@ app.get("/dashboard", (request, response) => {
    response.redirect("https://alix-gg.glitch.me/")
 });
 app.get("/invite", (request, response) => {
-   response.redirect("https://discord.com/oauth2/authorize?client_id=698497192935161866&scope=bot&permissions=2088234239")
+   response.redirect("https://discord.com/oauth2/authorize?client_id=693846748824862770&scope=bot&permissions=2081815807")
 });
 app.get("*", (request, response) => {
   response.sendFile(__dirname + "/views/404.html");
