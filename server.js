@@ -50,7 +50,7 @@ app.get("/community", (request, response) => {
    response.redirect("https://discord.gg/qBbgnxs")
 });
 app.get("/dashboard", (request, response) => {
-   response.redirect("https://bot-alix.glitch.me/")
+   response.redirect("https://alix-gg.glitch.me/")
 });
 app.get("/invite", (request, response) => {
    response.redirect("https://discord.com/oauth2/authorize?client_id=698497192935161866&scope=bot&permissions=2088234239")
