@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Title</title>
+</head>
+<body>
+<input type="text" name="firstname" id="firstname" ><br>
+<input type="button" value="search" id="search">
+<script src="http://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script>
+    $('#search').click(function(){
+        var firstname = $('#firstname').val();
+        $.ajax({
+            url: "http://localhost:3000/"+firstname,
+            method: 'get'
+        }).done(function() {
+
+        });
+    })
+
+</script>
+
+</body>
+</html>

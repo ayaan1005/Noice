@@ -12,8 +12,7 @@ app.set("view engine", "ejs")
 app.use(express.static("public"));
 
 app.get("/", function(req, res) {
-  res.render("index", {client: client})
-  res.sendStatus(200)
+  res.sendFile(__dirname + "/views/embed.html")
 });
 app.listen(3000) 
 app.get("/commands", (request, response) => {
@@ -21,9 +20,6 @@ app.get("/commands", (request, response) => {
 });
 app.get("/contact-us", (request, response) => {
   response.sendFile(__dirname + "/views/contact-us.html");
-});
-app.get("/embed", (request, response) => {
-  response.sendFile(__dirname + "/views/embed.html");
 });
 app.get("/js/embedg/fields.js", (request, response) => {
   response.sendFile(__dirname + "/js/embedg/fields.js");
@@ -55,6 +51,10 @@ app.get("/dashboard", (request, response) => {
 app.get("/invite", (request, response) => {
    response.redirect("https://discord.com/oauth2/authorize?client_id=693846748824862770&scope=bot&permissions=2081815807")
 });
+app.get('/:input', function(req, res) {
+  console.log(req.params.input);
+  res.redirect("https://discord.com")
+});
 app.get("*", (request, response) => {
   response.sendFile(__dirname + "/views/404.html");
 });
@@ -65,4 +65,4 @@ client.on("ready", () => {
   console.log("I am Looking Forward to this :D")
 })
 
-client.login(process.env.TOKEN)
+client.login("NzI3NzgxNDg2Njg1NzE2NDgy.Xvw1Uw.CBnniJXewshrHmXnVek_nqpqxlc")
